@@ -1,0 +1,18 @@
+@import 'bootstrap/bootstrap'
+@import 'layout'
+@import 'header'
+@import 'about'
+@import 'information'
+@import 'location'
+@import 'meeting'
+@import 'credit'
+@import 'footer'
+
+.pc
+    display: block!important
+    @include pad()
+        display: none!important
+.phone 
+    display: none!important
+    @include pad()
+        display: block!important

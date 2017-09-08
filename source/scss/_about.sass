@@ -1,0 +1,30 @@
+h2
+    display: block
+    text-align: center
+    padding-bottom: 20px 
+    font-weight: 800
+    color: $main-color
+.about
+    padding: 100px 0
+    background-color: #fff
+    margin-top: 300px
+    text-indent: 2em
+.about-content
+    display: flex
+    align-items: center
+    justify-content: center
+    @include text-justify
+    @include pad
+        display: block
+        align-items: none
+        justify-content: none
+    div
+        @include pad
+            display: block
+            align-items: none
+            justify-content: none
+            margin-top: 120px
+        &>img
+            box-shadow: -5px 5px 10px #A0A0A0
+            padding: 10px
+            @include el-center

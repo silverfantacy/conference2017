@@ -1,0 +1,44 @@
+/*====layout====*/
+$main-color: #1e50aa!important
+$important-color: #00A29A
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
+
+a:hover
+    text-decoration: none
+
+*
+    letter-spacing: .8px
+    // line-height: 1.6
+    transition: all, 0.3s, ease-in-out
+body
+    // font-family: 'Noto Sans TC', 'roboto', arial, sans-serif
+    font-family: Helvetica, Arial, 微軟正黑體, 微軟雅黑體, "Heiti TC", メイリオ, sans-serif
+    // font-family: Arial, Geneva, "Microsoft JhengHei", sans-serif
+    line-height: 1.5em
+    color: $gray-800
+    background-image: url(../images/bg.jpg)
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+    height: 100%
+
+// 文字齊頭尾
+@mixin text-justify 
+    text-align: justify
+    text-justify: auto
+// 元件置中
+@mixin el-center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+@mixin pad
+    @media(max-width:767px)
+        @content
+@mixin phone
+    @media(max-width:575px)
+        @content
+@mixin pc-pad
+    @media(min-width: 767px) and (max-width: 991px)
+        @content

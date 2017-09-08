@@ -1,0 +1,35 @@
+.information
+    margin-top: 345px
+    padding: 100px 0
+    background-color: #fff
+
+.information-content
+    display: flex
+    align-items: center
+    justify-content: center
+    @include text-justify
+    @include pad
+        display: block
+        align-items: none
+        justify-content: none
+        flex-direction: row-reverse
+    div
+        @include pad
+            display: block
+            align-items: none
+            justify-content: none
+            margin-top: 180px
+        &>img
+            box-shadow: 5px 5px 10px #A0A0A0
+            padding: 10px
+            @include el-center
+            @include pad
+                // top: 0
+                // left: 0
+                // transform: translate(0,0)
+                // display: block
+    h6
+        font-size: 1.2em
+        color: $important-color
+    .col.phone
+        margin-bottom: 200px
