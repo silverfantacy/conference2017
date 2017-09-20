@@ -1,0 +1,43 @@
+#traffic.traffic
+    h2.h2-title 交通方式
+    .container
+        .row
+            .col-12.col-lg-6
+                #accordion(role='tablist')
+                    .card
+                        #headingOne.card-header.bottom-border-none(role='tab')
+                            h5.mb-0
+                                a.collapsed(data-toggle='collapse', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                                    | 捷運
+                        #collapseOne.collapse.show(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
+                            .card-body
+                                ul
+                                    li 搭乘捷運淡水信義線至「台大醫院」站2號出口下車(距離本館步行時間約5分鐘左右)
+                                    li 搭乘捷運淡水信義線或松山新店線至「中正紀念堂」站5號或6號出口下車(距離本館步行時間約15分鐘左右)
+                    .card
+                        #headingTwo.card-header(role='tab')
+                            h5.mb-0
+                                a.collapsed(data-toggle='collapse', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                                    | 客運
+                        #collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
+                            .card-body
+                                ul
+                                    li 搭乘37、245、249、263、270、621、630、651公車，於「仁愛中山路口」下車
+                                    li 搭乘3、0東、20、22、22區間、38、204、1503、信義幹線、信義新幹線，於「信義林森路口」下車
+                                    li 搭乘15、208公車，於「景福門」下車
+                    .card
+                        #headingThree.card-header(role='tab')
+                            h5.mb-0
+                                a.collapsed(data-toggle='collapse', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                                    | 開車
+                        #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
+                            .card-body
+                                p (有地下停車場，可供中小型汽車停放)
+                                ul
+                                    li 中山高速公路→建國北路→下高架橋→仁愛路→景福門前
+                                    li 中正橋→重慶南路→總統府→凱達格蘭大道→信義路
+                                    li 忠孝橋→忠孝西路右轉→中山南路→信義路
+                                    li 台北橋→民權西路→中山北路二段→中山南路→信義路
+    
+            .col-12.col-lg-6
+                #map

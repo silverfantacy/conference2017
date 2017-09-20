@@ -19,9 +19,27 @@ function initMap() {
     })
 }
 
-// $(document).ready(function(){
-//     $('.about-btn').on('click',function(e){
-//         console.log("123");
-//         $('html,body').animate({scrollTop:$('#about').offset().top},1000);
-//     })
-// });
+$(document).ready(function(){
+    // nav flex 
+    $(window).on("scroll",function(){
+        var scrolDistance = $(window).scrollTop(); //滾動距離
+        var $nav = $("nav");
+        if(scrolDistance > 155) {
+            $nav.addClass("fixed-top");
+        }
+        else{
+            $nav.removeClass("fixed-top");
+        };
+        if(scrolDistance > 400) {
+            $(".about-content").css("display","flex");
+            $(".about-content").addClass("fadeInLeftBig");
+        };
+        
+    })
+    // traffic ul 
+    $(".collapsed").on("click",function(){
+        // console.log(123);
+        $(this).parent().parent().parent().siblings().find(".card-header").removeClass("bottom-border-none");
+        $(this).parent().parent().toggleClass("bottom-border-none");
+    })
+});

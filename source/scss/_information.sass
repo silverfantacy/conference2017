@@ -1,35 +1,88 @@
 .information
-    margin-top: 345px
-    padding: 100px 0
-    background-color: #fff
-
-.information-content
     display: flex
     align-items: center
-    justify-content: center
-    @include text-justify
-    @include pad
-        display: block
-        align-items: none
-        justify-content: none
-        flex-direction: row-reverse
-    div
-        @include pad
-            display: block
-            align-items: none
-            justify-content: none
-            margin-top: 180px
-        &>img
-            box-shadow: 5px 5px 10px #A0A0A0
-            padding: 10px
-            @include el-center
-            @include pad
-                // top: 0
-                // left: 0
-                // transform: translate(0,0)
-                // display: block
-    h6
-        font-size: 1.2em
-        color: $important-color
-    .col.phone
-        margin-bottom: 200px
+    // height: 690px
+    background-color: rgba(90, 131, 204, 0.1)
+    background-image: url(../images/informationImg.png)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: right center
+    @include padding-distance-pc
+    +pc
+        padding: 100px 0
+        background-size: cover
+    +pad
+        padding: 80px 0
+        background-image: url(../images/informationImg-opacity.png)
+    +phone
+        padding: 50px 0
+    .col-12
+        display: flex
+        align-items: center
+        flex-direction: column
+        >ul
+            list-style-image: url('../images/square.jpg')
+            li
+                line-height: 2rem
+                font-weight: 600
+                color: $title-color
+                // &:before
+                //     content: ''
+                //     display: inline-block
+                //     width: 12px
+                //     height: 12px
+                //     background-color: #333333
+                //     margin-right: 10px
+                >span
+                    display: inline-block
+                    font-size: 0.8rem
+                    font-weight: 900
+                    color: #2D4E83
+.list-group
+    margin: 1rem 0
+    .list-group-item
+        background-color: rgba(0, 0, 0, 0.0)!important
+        border-top: .25px solid #2857AB
+        border-bottom: .25px solid #2857AB
+        border-left: 0px solid #2857AB
+        border-right: 0px solid #2857AB
+        border-radius: 0!important
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &:first-child
+            border-top: 2px solid #2857AB
+        &:last-child
+            border-bottom: 2px solid #2857AB
+        p
+            margin-bottom: 0px
+            color: #2D4E83
+            font-weight: 600
+            span
+                color: #EB5757
+.sign-btn
+    background: $main-color
+    $bottom-height: 1.9rem
+    height: $bottom-height
+    line-height: $bottom-height
+    font-size: 1rem
+    font-weight: 900
+    padding: 0
+    margin-top: 25px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    &:hover
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)
+        cursor: pointer
+    &:active
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3) inset
+    &:focus
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3) inset
+    +pc
+        height: 2.3rem
+        line-height: 2.3rem
+    // +pad
+    //     height: 2.3rem
+    //     line-height: 2.3rem
+    // +phone
+    //     height: 2.3rem
+    //     line-height: 2.3rem

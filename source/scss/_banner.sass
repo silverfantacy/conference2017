@@ -1,0 +1,53 @@
+header
+    position: relative
+    box-shadow: 0 9px $main-color
+    margin-bottom: 9px
+    .container
+        position: relative
+        .banner
+            position: relative
+            // background-image: url(../images/theme.png)
+            // background-repeat: no-repeat
+            // $banner-width: 100%
+            // width: $banner-width
+            img
+                position: absolute
+                top: 109px
+                left: 15px
+                $banner-width: 100%
+                $banner-height: 188px
+                height: $banner-height
+                +pc
+                    // width: $banner-width*0.8
+                    height: $banner-height*0.8
+                    left: -15px
+                +phone
+                    width: $banner-width
+                    height: auto
+                    background-size: cover
+                    left: 0px
+            .title
+                font-family: Libre Caslon Text, $font-family-base
+                font-weight: bold
+                font-size: 2.3rem
+                letter-spacing: 2.1px
+                color: $main-color
+                margin: 0
+            .ch-title
+                margin: 0
+                font-family: Songti SC, 'Noto Serif', serif
+                font-size: 2rem
+                color: $second-color
+            .en-title
+                margin: 0
+                font-family: 'Radley', serif
+                font-size: 1rem
+                letter-spacing: 0px
+                color: $second-color
+    .color-bar
+        display: block
+        position: absolute
+        bottom: 2px
+        height: 4px
+        width: 100%
+        background-color: $main-color

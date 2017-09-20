@@ -1,17 +1,17 @@
 //- meeting
 #meeting.meeting
-    h2 議程表
+    h2.h2-title 議程表
     .container
         table.table.table-hover.table-bordered
             thead.thead-inverse
                 tr
                     th(width='6%', height='25') 項次
                     th(width='6%', height='25') 時間
-                    th(width='35%', height='25') 課程主題及內容概要
+                    th(width='37%', height='25') 課程主題及內容概要
                     th(width='0%', height='25') 授課講師
-                    th(width='0%', height='25') 引言人
+                    th(width='27%', height='25') 引言人
             tbody
-                tr.table-dark
+                tr.thead-other
                     td(align='center') 01
                     td(align='center') 08:20 - 09:00
                     td(colspan='3', align='center') 報到
@@ -59,7 +59,7 @@
                         | 台灣營養醫學推廣協會理事長
                         br
                         | 陳伯中 教授
-                tr.table-dark
+                tr.thead-other
                     td(align='center') 07
                     td(align='center') 10:35 - 10:50
                     td(colspan='3', align='center') 交流時間
@@ -80,11 +80,11 @@
                         | 放射腫瘤科主任
                         br
                         | 熊佩韋 醫師
-                tr.table-dark
+                tr.thead-other
                     td(align='center') 09
                     td(align='center') 11:35 - 12:00
                     td(colspan='3', align='center') 上午課程總結 / 綜合座談 Q&A
-                tr.table-dark
+                tr.thead-other
                     td(align='center') 10
                     td(align='center') 12:00 - 13:00
                     td(colspan='3', align='center') 午餐
@@ -135,7 +135,7 @@
                         | 台灣營養學會理事長
                         br
                         | 王果行 教授
-                tr.table-dark
+                tr.thead-other
                     td(align='center') 14
                     td(align='center') 15:15 - 15:30
                     td(colspan='3', align='center') 交流時間
@@ -167,7 +167,7 @@
                         | 暨中央研究院評議會聘任評議員
                         br
                         | 彭汪嘉康 院士
-                tr.table-dark
+                tr.thead-other
                     td(align='center') 17
                     td(align='center') 17:00 - 17:30
                     td(colspan='3', align='center') 下午課程總結 / 綜合座談 Q&A

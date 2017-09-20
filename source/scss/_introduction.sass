@@ -1,0 +1,29 @@
+.introduction
+    display: flex
+    align-items: center
+    // height: 690px
+    background-image: url(../images/introductionImg.png)
+    background-repeat: no-repeat
+    @include padding-distance-pc
+    // background-color: #ccc
+    +pc
+        padding: 100px 0
+        background-size: cover
+    +pad
+        padding: 80px 0
+        background-image: none
+        .container
+            padding: 0 30px 
+        .col-12
+            display: flex
+            align-items: center
+            flex-direction: column
+    +phone
+        padding: 50px 0
+            
+    p
+        // font-family: 'cwTeXKai', serif
+        line-height: 30px
+        font-weight: 500
+        font-size: 1.1rem
+        @include text-justify

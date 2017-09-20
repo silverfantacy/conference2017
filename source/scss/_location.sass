@@ -1,22 +1,42 @@
 .location
-    margin-top: 300px
-    padding: 100px 0
-    background-color: #fff
-    h4
-        text-align: center
-        line-height: 1.5em
-    #map
-        height: 350px
-    h6
-        text-align: center
-        font-size: 1.5em
-        margin: 30px
-        color: $important-color
-.card-header
-    h5
-        text-align: center
-        text-decoration: none
-.card-body
-    line-height: 2em
-    &:hover
-        text-decoration: none
+    display: flex
+    flex-direction: column
+    align-items: center
+    // height: 600px
+    background: linear-gradient( rgba(0, 0, 0, 0.75)), url(../images/locationImg.jpg)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    color: $white
+    @include padding-distance-pc
+    +pc
+        padding: 100px 0
+        background-size: cover
+    +pad
+        padding: 80px 0
+    +phone
+        padding: 50px 0
+    .h2-title
+        color: $white
+    .row
+        margin-top: 100px
+        +pc
+            margin-top: 50px
+        .col-12
+            display: flex
+            flex-direction: column
+            align-items: center
+            // background-color: $red
+            img
+                margin-bottom: 15px
+            h3
+                margin-bottom: 23px
+                +pc
+                    margin-bottom: 10px
+            p
+                text-align: center
+                font-size: 1.1rem
+                letter-spacing: 1px
+                line-height: 29px
+            +pc
+                margin: 10px 0

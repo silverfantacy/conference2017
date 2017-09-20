@@ -1,27 +1,4 @@
-/*====layout====*/
-$main-color: #1e50aa!important
-$important-color: #00A29A
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
-
-a:hover
-    text-decoration: none
-
-*
-    letter-spacing: .8px
-    // line-height: 1.6
-    transition: all, 0.3s, ease-in-out
-body
-    // font-family: 'Noto Sans TC', 'roboto', arial, sans-serif
-    font-family: Helvetica, Arial, 微軟正黑體, 微軟雅黑體, "Heiti TC", メイリオ, sans-serif
-    // font-family: Arial, Geneva, "Microsoft JhengHei", sans-serif
-    line-height: 1.5em
-    color: $gray-800
-    background-image: url(../images/bg.jpg)
-    background-repeat: no-repeat
-    background-attachment: fixed
-    background-size: cover
-    height: 100%
-
+/*====mixin====*/
 // 文字齊頭尾
 @mixin text-justify 
     text-align: justify
@@ -32,13 +9,104 @@ body
     top: 50%
     left: 50%
     transform: translate(-50%,-50%)
+// padding上下預留PC
+@mixin padding-distance-pc
+    padding: 130px 0
 
+@mixin pc-large
+    @media(max-width: 1200px)
+        @content
+@mixin pc
+    @media(max-width: 992px)
+        @content
 @mixin pad
-    @media(max-width:767px)
+    @media(max-width: 768px)
         @content
 @mixin phone
-    @media(max-width:575px)
+    @media(max-width: 576px)
         @content
-@mixin pc-pad
-    @media(min-width: 767px) and (max-width: 991px)
-        @content
+
+/*====layout====*/
+$main-color: #3F5C8F!important
+$second-color: #18B7EA!important
+$important-color: #56CCF2!important
+$red-color: #EB5757!important
+$title-color: #4F4F4F
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
+@import url(https://fonts.googleapis.com/css?family=Oswald:500)
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif)
+@import url(https://fonts.googleapis.com/css?family=Radley)
+// Chinese: 仿宋體 font-family: 'cwTeXFangSong', serif;
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css)
+// Chinese: 楷體 font-family: 'cwTeXKai', serif;
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css)
+// // Chinese: 仿宋體 font-family: 'cwTeXFangSong', serif;
+// @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css)
+// // Chinese: 仿宋體 font-family: 'cwTeXFangSong', serif;
+// @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css)
+
+a:hover
+    text-decoration: none
+
+*
+    letter-spacing: .9px
+    box-sizing: border-box
+    // line-height: 1.6
+    transition: all, 0.3s, ease-in-out
+    &:before, &:after 
+        box-sizing: border-box
+
+body
+    // font-family: 'Noto Sans TC', 'roboto', arial, sans-serif
+    font-family: Helvetica, Arial, 微軟正黑體, 微軟雅黑體, "Heiti TC", メイリオ, sans-serif
+    // font-family: Arial, Geneva, "Microsoft JhengHei", sans-serif
+    font-size: 18px
+    line-height: 1.3em
+    color: $gray-800
+    height: 100%
+
+.h2-title
+    font-family: LiHei Pro, $font-family-base
+    font-size: 2rem
+    color: $title-color
+    position: relative
+    &:after
+        content: ''
+        display: inline-flex
+        justify-content: center
+        position: absolute
+        width: 60px
+        left: 2.2rem
+        bottom: 0
+        border-bottom: 1px solid $important-color
+    //     +phone
+    //         left: 50%
+    //         transform: translateX(-50%)
+    // +phone
+    //     text-align: center
+    //     background-color: #000
+
+.sign
+    position: fixed
+    z-index: 101
+    bottom: 24px
+    right: 30px
+    animation: rotate 1.5s 0s infinite both
+    @include pad
+        bottom: 2%
+        right: 30px
+    >img
+        display: block
+        width: 100px
+        height: 100px
+        @include pad
+            width: 70px
+            height: 70px
+
+@keyframes rotate
+	0%
+		transform:  scale(0.9,0.9)
+	50%
+		transform:  scale(1,1)
+	100%
+		transform:  scale(0.9,0.9)

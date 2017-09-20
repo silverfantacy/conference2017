@@ -1,75 +1,23 @@
 //- location
 #location.location
-    h2 活動地點
-    h4 張榮發基金會國際會議中心11樓 ( 1101 會議廳 )
-        br
-        | [台北市中正區中山南路11號]
-    #map.mb-3.mt-3
-    h6 學員可搭乘以下交通工具或自行開車前往本中心
+    h2.h2-title 時間地點
     .container
-        //- .card-deck
-        //-     .card.mb-3
-        //-         img.card-img-top(src='../images/mrt.png', alt='MRT')
-        //-         .card-body
-        //-             h4.card-title 捷運
-        //-             ul
-        //-                 li 搭乘捷運淡水信義線至「台大醫院」站2號出口下車(距離本館步行時間約5分鐘左右)
-        //-                 li 搭乘捷運淡水信義線或松山新店線至「中正紀念堂」站5號或6號出口下車(距離本館步行時間約15分鐘左右)
-        //-             p.card-text
-        //-                 small.text-muted Last updated 3 mins ago
-        //-     .card.mb-3
-        //-         img.card-img-top(src='http://lorempixel.com/400/200', alt='Card image cap')
-        //-         .card-body
-        //-             h4.card-title 客運
-        //-             ul
-        //-                 li 搭乘37、245、249、263、270、621、630、651公車，於「仁愛中山路口」下車
-        //-                 li 搭乘3、0東、20、22、22區間、38、204、1503、信義幹線、信義新幹線，於「信義林森路口」下車
-        //-                 li 搭乘15、208公車，於「景福門」下車
-        //-             p.card-text
-        //-                 small.text-muted Last updated 3 mins ago
-        //-     .card.mb-3
-        //-         img.card-img-top(src='http://lorempixel.com/400/200', alt='Card image cap')
-        //-         .card-body
-        //-             h4.card-title 開車
-        //-             p.card-text 有地下停車場，可供中小型汽車停放
-        //-             ul
-        //-                 li 中山高速公路→建國北路→下高架橋→仁愛路→景福門前
-        //-                 li 中正橋→重慶南路→總統府→凱達格蘭大道→信義路
-        //-                 li 忠孝橋→忠孝西路右轉→中山南路→信義路
-        //-                 li 台北橋→民權西路→中山北路二段→中山南路→信義路
-        //-             p.card-text
-        //-                 small.text-muted Last updated 3 mins ago
-        #accordion(role='tablist')
-            .card
-                #headingOne.card-header(role='tab')
-                    h5.mb-0
-                        a(data-toggle='collapse', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
-                            | 捷運
-                #collapseOne.collapse.show(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
-                    .card-body
-                        ul
-                            li 搭乘捷運淡水信義線至「台大醫院」站2號出口下車(距離本館步行時間約5分鐘左右)
-                            li 搭乘捷運淡水信義線或松山新店線至「中正紀念堂」站5號或6號出口下車(距離本館步行時間約15分鐘左右)
-            .card
-                #headingTwo.card-header(role='tab')
-                    h5.mb-0
-                        a.collapsed(data-toggle='collapse', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
-                            | 客運
-                #collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
-                    .card-body
-                        ul
-                            li 搭乘37、245、249、263、270、621、630、651公車，於「仁愛中山路口」下車
-                            li 搭乘3、0東、20、22、22區間、38、204、1503、信義幹線、信義新幹線，於「信義林森路口」下車
-                            li 搭乘15、208公車，於「景福門」下車
-            .card
-                #headingThree.card-header(role='tab')
-                    h5.mb-0
-                        a.collapsed(data-toggle='collapse', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-                            | 開車(有地下停車場，可供中小型汽車停放)
-                #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
-                    .card-body
-                        ul
-                            li 中山高速公路→建國北路→下高架橋→仁愛路→景福門前
-                            li 中正橋→重慶南路→總統府→凱達格蘭大道→信義路
-                            li 忠孝橋→忠孝西路右轉→中山南路→信義路
-                            li 台北橋→民權西路→中山北路二段→中山南路→信義路
+        .row
+            .col-12.col-lg-4
+                img(src="../images/calendar.svg", alt="")
+                h3 日 期
+                p 106年11月26日 ( 星期日 )
+            .col-12.col-lg-4
+                img(src="../images/time.svg", alt="")
+                h3 時 間
+                p 08：30AM - 05：30PM
+                    br
+                    |(8:20 開始報到)
+            .col-12.col-lg-4
+                img(src="../images/location.svg", alt="")
+                h3 地 點
+                p 10048 台北市中正區中山南路11號
+                    br
+                    | 張榮發基金會國際會議中心11樓 
+                    br
+                    | ( 1101 會議廳 )

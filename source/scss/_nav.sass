@@ -1,0 +1,32 @@
+nav
+    background-color: rgba(29, 63, 123, 0.85)
+    box-shadow: 0 4px rgba(167, 191, 232, 0.85)
+    z-index: 100
+    .container
+        font-family: LiHei Pro
+        ul
+            // transform: translateX(-8px)
+            @include pc
+                transform: translateX(0px)
+        a
+            color: $white!important
+            // padding: 0!important
+        span
+            // font-family: Archivo Narrow
+            // font-weight: 600
+            font-size: 1.3rem
+            color: $white!important
+            &.navbar-text
+                font-family: 'Oswald', sans-serif
+                font-weight: 500
+                text-decoration: none!important
+                &:before
+                    content: ''
+                    display: inline-block
+                    width: 18px
+                    height: 18px
+                    background-image: url(../images/phone.svg)
+                    background-position: center center
+                    margin-right: 7px
+    .navbar-toggler-icon
+        color: $white!important

@@ -1,12 +1,23 @@
 footer
     background-color: $main-color
     color: $white
-    padding: 30px 0
+    padding: 20px 0
     .webInformation
         text-align: center
         font-weight: 200
-        font-size: 1em
-        line-height: 1.5em
-
+        font-size: 0.8rem
+        line-height: 1.5rem
+        ul
+            display: flex
+            justify-content: center
+            list-style-image: url('../images/square-footer.jpg')
+            margin-bottom: 0
+            +pc
+                flex-direction: column
+                list-style-image: none
+                list-style: none
+                padding: 0
+            li
+                margin: 0 1.4rem
     p
         margin: 0
