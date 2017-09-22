@@ -2,6 +2,8 @@ header
     position: relative
     box-shadow: 0 9px $main-color
     margin-bottom: 9px
+    +phone
+        height: 100vh
     >.container
         position: absolute
         left: 50%
@@ -18,12 +20,17 @@ header
         .banner
             position: relative
             display: block
-            background-color: #000
-            // height: 100%
+            // background-color: #000
+            // height: 188px
             // background-image: url(../images/theme.png)
             // background-repeat: no-repeat
             // $banner-width: 100%
             // width: $banner-width
+            // +phone
+            //     // background-color: rgba(29, 63, 123, 0.85)
+            //     position: absolute
+            //     bottom: 0
+                
             img
                 position: absolute
                 top: 166px
@@ -37,12 +44,20 @@ header
                     // width: $banner-width*0.8
                     height: $banner-height*0.8
                     left: -15px
-                +phone
-                    width: $banner-width
-                    height: auto
-                    background-size: cover
-                    left: 0px
-                    top: 350px
+                // +phone
+                //     top: 0
+                //     background-color: rgba(29, 63, 123, 0.85)
+                //     width: 341px
+                //     height: 105px
+                //     padding: 100%
+                //     box-sizing: content-box
+                //     // &:before
+                //     //     content: '123'
+                //     //     position: absolute
+                //     //     width: 100px
+                //     //     height: 100px
+                //     //     background-color: red
+                    
             .title
                 font-family: Libre Caslon Text, $font-family-base
                 font-weight: bold
@@ -68,3 +83,24 @@ header
         height: 4px
         width: 100%
         background-color: $main-color
+
+.theme-phone
+    background-color: rgba(29, 63, 123, 0.85)
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 30%
+    >img
+        +el-center
+        top: 20px
+        transform: translate(-50%,0%)
+        width: 90%
+
+@media (max-width: 575px)  
+    .theme-hide
+        display: none!important
+    .theme-show
+        display: block
+@media (min-width: 575px)  
+    .theme-phone-hide
+        display: none

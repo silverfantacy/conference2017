@@ -5,8 +5,16 @@ html(lang="zh-TW")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         meta(name='format-detection', content='telephone=no')
+        meta(name='description', content='癌症，35年來猶如泰山穩坐國人十大死因之首，雖然醫藥發展亦相當快速，面對持續攀升的罹患率、復發率及死亡率仍無大幅進展。隨著營養醫學（Nutraceutical）興起發現，營養素不僅能降低治療藥物的副作用，與現行癌症治療乃至最新的免疫療法相比，綜合了促癌細胞凋亡、抗血管新生、抑制癌細胞生長週期及活化自然殺手細胞等作用，且能加乘藥物的治療效果，成為「整合性醫療」中不可或缺之一環。')
         link(rel="icon", type="image/x-icon", href="images/favicon.ico")
-        title Conference 2017
+        link(rel='image_src', href='images/2017_Conference.jpg.jpg')
+        meta(property='og:site_name', content='2017年營養醫學研討會')
+        meta(property='og:title', content='2017年營養醫學研討會')
+        meta(property='og:image', content='images/2017_Conference.jpg')
+        meta(property='og:description', content='本次研討會將發表突破性的研究，精彩的實驗數據可清楚看到「癌症治療合併營養醫學介入」發揮了極佳的成果，相信未來在各科醫師、醫護人員、營養師及病人家屬的共同合作之下，以病人為中心，正確時機介入適當的營養，對腫瘤治療臨床應用開啟嶄新的觀念與突破，對癌症病患的治療更有值得期待的新曙光！')
+        meta(property='og:url', content='http://nutraceutical.org.tw/conference_2017')
+        meta(property='og:type', content='website')
+        title 2017年營養醫學研討會
         //- link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css', integrity='sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M', crossorigin='anonymous')
         //- link(rel='stylesheet', href='css/bootstrap/bootstrap.css')
         link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
@@ -19,6 +27,8 @@ html(lang="zh-TW")
     body
         .wrapper
             header
+                .theme-phone.theme-show.theme-phone-hide
+                    img(src="images/theme-phone.png", alt="")
                 include partials/header.jade
                 include partials/banner.jade
             main
