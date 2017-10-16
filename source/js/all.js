@@ -41,36 +41,36 @@ $(document).ready(function(){
     })
     // 滾動選單
      
-    $('.introduction-btn').click(function () {
-        $('html,body').animate({
-            scrollTop: $('#introduction').offset().top
-        }, 1000);
-    });
-    $('.location-btn').click(function () {
-        $('html,body').animate({
-            scrollTop: $('#location').offset().top
-        }, 1000);
-    });
-    $('.traffic-btn').click(function () {
-        $('html,body').animate({
-            scrollTop: $('#traffic').offset().top
-        }, 1000);
-    });
-    $('.information-btn').click(function () {
-        $('html,body').animate({
-            scrollTop: $('#information').offset().top
-        }, 1000);
-    });
-    $('.meeting-btn').click(function () {
-        $('html,body').animate({
-            scrollTop: $('#meeting').offset().top
-        }, 1000);
-    });
-    $('.credit-btn').click(function () {
-        $('html,body').animate({
-            scrollTop: $('#credit').offset().top
-        }, 1000);
-    });
+    // $('.introduction-btn').click(function () {
+    //     $('html,body').animate({
+    //         scrollTop: $('#introduction').offset().top
+    //     }, 1000);
+    // });
+    // $('.location-btn').click(function () {
+    //     $('html,body').animate({
+    //         scrollTop: $('#location').offset().top
+    //     }, 1000);
+    // });
+    // $('.traffic-btn').click(function () {
+    //     $('html,body').animate({
+    //         scrollTop: $('#traffic').offset().top
+    //     }, 1000);
+    // });
+    // $('.information-btn').click(function () {
+    //     $('html,body').animate({
+    //         scrollTop: $('#information').offset().top
+    //     }, 1000);
+    // });
+    // $('.meeting-btn').click(function () {
+    //     $('html,body').animate({
+    //         scrollTop: $('#meeting').offset().top
+    //     }, 1000);
+    // });
+    // $('.credit-btn').click(function () {
+    //     $('html,body').animate({
+    //         scrollTop: $('#credit').offset().top
+    //     }, 1000);
+    // });
     // traffic ul 
     $(".collapsed").on("click",function(){
         // console.log(123);
