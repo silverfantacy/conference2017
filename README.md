@@ -2,6 +2,8 @@
 
 ## 安裝環境
 
+使用 `gulp 3.9.1`
+
 ```
 npm install gulp -g
 npm install bower -g
